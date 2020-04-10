@@ -6,23 +6,25 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:layout_gravity="center_vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
+        android:layout_gravity="center_horizontal"
         android:textSize="30sp"/>
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnRoll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="360dp" />
+        android:layout_gravity="center_horizontal"
+        android:text="@string/roll"
+      />
 
 
 </LinearLayout>
