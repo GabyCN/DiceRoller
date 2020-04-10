@@ -11,6 +11,8 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var resultImage: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         btnRoll.setOnClickListener {
             rollDice()
         }
+        resultImage=findViewById(R.id.ivResult)
     }
 
     private fun rollDice() {
@@ -33,7 +36,6 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-        val resultImage:ImageView=findViewById(R.id.ivResult)
         resultImage.setImageResource(drawableResource)
     }
 
